@@ -1,0 +1,247 @@
+/**
+ * Light Reset
+ * ==================================================
+ * A light version of the reset stylesheet that provides a clean slate for styling
+ * and integration with  CSS frameworks.
+ */
+
+
+/* Set font size adjustment for the entire document */
+html {
+  -webkit-text-size-adjust: 100%; /* For WebKit browsers */
+
+  /* Smooth scroll behavior when an element within the container is focused */
+  &:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Basic styling for the body */
+body {
+  text-size-adjust: 100%; /* Adjusts text size */
+  position: relative; /* Positions relative to parent elements */
+  width: 100%; /* Full width of the screen */
+  min-height: 100vh; /* Minimum height is the full visible height of the screen */
+
+  /* Font smoothing for better text rendering on macOS */
+  -moz-osx-font-smoothing: grayscale; /* For Firefox */
+  -webkit-font-smoothing: antialiased; /* For WebKit browsers */
+  text-rendering: optimizeSpeed; /* Optimizes text rendering for better performance */
+}
+
+/* Universal selector for all elements and pseudo-elements */
+*,
+::after,
+::before {
+  box-sizing: border-box; /* Includes padding and border within element's width/height */
+}
+
+/**
+ * CSS Reset Tweaks
+ * Based on Eric Meyer's CSS Reset v2.0-modified (public domain)
+ * URL: http://meyerweb.com/eric/tools/css/reset/
+ */
+
+ a,
+ abbr,
+ acronym,
+ address,
+ applet,
+ article,
+ aside,
+ audio,
+ b,
+ big,
+ blockquote,
+ body,
+ br,
+ button,
+ canvas,
+ caption,
+ center,
+ cite,
+ code,
+ col,
+ colgroup,
+ data,
+ datalist,
+ dd,
+ del,
+ details,
+ dfn,
+ div,
+ dl,
+ dt,
+ em,
+ embed,
+ fieldset,
+ figcaption,
+ figure,
+ footer,
+ form,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ head,
+ header,
+ hgroup,
+ hr,
+ html,
+ i,
+ iframe,
+ img,
+ input,
+ ins,
+ kbd,
+ label,
+ legend,
+ li,
+ link,
+ main,
+ map,
+ mark,
+ menu,
+ meta,
+ meter,
+ nav,
+ noscript,
+ object,
+ ol,
+ optgroup,
+ option,
+ output,
+ p,
+ param,
+ picture,
+ pre,
+ progress,
+ q,
+ rb,
+ rp,
+ rt,
+ rtc,
+ ruby,
+ s,
+ samp,
+ script,
+ section,
+ select,
+ small,
+ source,
+ span,
+ strong,
+ style,
+ svg,
+ sub,
+ summary,
+ sup,
+ table,
+ tbody,
+ td,
+ template,
+ textarea,
+ tfoot,
+ th,
+ thead,
+ time,
+ title,
+ tr,
+ track,
+ tt,
+ u,
+ ul,
+ var,
+ video,
+ wbr {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   vertical-align: baseline;
+ }
+
+/* Normalize HTML5 elements for older browsers */
+article,
+aside,
+details,
+embed,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+object,
+section {
+  display: block;
+}
+
+canvas,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block
+}
+
+/* Reset and normalize form inputs */
+input:required,
+input {
+  box-shadow: none;
+}
+
+/* Autofill styling for better compatibility */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+/* Improve appearance of search inputs */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+video {
+  background: #000;
+}
+
+/* Styling for multimedia elements */
+audio,
+img,
+picture,
+svg,
+video {
+  max-width: 100%; /* Limits the maximum width of elements to 100% */
+  display: inline-block; /* Display elements as inline-blocks */
+  vertical-align: middle; /* Aligns vertically */
+  height: auto; /* Auto height to maintain aspect ratio */
+}

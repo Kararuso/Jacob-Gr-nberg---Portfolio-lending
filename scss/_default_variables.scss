@@ -1,0 +1,26 @@
+// colors
+$background-default: #EEEDEE;
+$text-default: #101010;
+$text-primary: #DB574D;
+$border-default: rgba(16, 16, 16, 0.1);
+
+// text 
+$text-16:  16px;
+$text-18:  18px;
+$text-24: 24px;
+$text-30:  30px;
+$text-40:  40px;
+$text-70:  70px;
+$text-90: 90px;
+
+
+// font
+$main-font: ClashDisplay;
+
+
+h1{font-size: 100px;}
+h2{font-size: 60px;}
+h3{font-size: 30px;}
+
+.caps {text-transform: uppercase;}
+.red_capitalize{text-transform: capitalize; color: $text-primary;}

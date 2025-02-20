@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    &--name {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        & h1 {color: $text-primary; line-height: 90px;}
+        & p {margin-left: 81px; font-size: $text-18;}
+    }
+
+    &--content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        & h3 {color: $text-primary; text-transform: uppercase;}
+        & nav {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: $text-18;
+        }
+    }
+
+    &-under { 
+        display: flex;
+        justify-content: space-between;
+        margin: 94px 0 48px 0;
+        
+        & nav {
+            display: flex; 
+            gap: 30px; 
+            text-transform: uppercase;
+        }
+    }
+}

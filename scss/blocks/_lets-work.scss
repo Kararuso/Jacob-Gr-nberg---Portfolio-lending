@@ -1,0 +1,17 @@
+.lets-work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 69px;
+    min-height: 100vh;
+    max-height: 668px;
+    
+    &--button {
+        width: 220px;
+        height: 220px;
+
+        &-text {text-transform: uppercase; font-size: $text-24; line-height: 26.4px;}
+        &_big{width: 220px;height: 220px;}
+        &_small{width: 200px;height: 200px;}
+    }
+}

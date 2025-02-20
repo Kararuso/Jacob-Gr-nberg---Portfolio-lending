@@ -1,0 +1,54 @@
+@import "../node_modules/scss-reset/reset";
+@import "../scss/default_variables";
+@import "./blocks/circle-button";
+
+
+
+@import "./blocks/header";
+@import "./blocks/start-section";
+@import "./blocks/services";
+@import "./blocks/exhibitions";
+@import "./blocks/reviews";
+@import "./blocks/lets-work";
+@import "./blocks/footer";
+
+@import "./blocks/media";
+
+@font-face {
+	font-family: 'ClashDisplay';
+	src: local('ClashDisplay'),
+		 url('/fonts/OTF/ClashDisplay-Regular.otf') format('woff'),
+		 url('/fonts/TTF/ClashDisplay-Variable.ttf') format('ttf')
+}
+:root {
+
+	font-family: $main-font;
+	background-color: $background-default;
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+body{
+
+}
+.wrapper {
+    max-width: 1400px;
+	height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 0 15px;
+	// @media (max-width: 1440px) {
+	// 	max-width: 1000px;
+	//   }
+	// @media (max-width: 1024px) {
+	// 	max-width: 768px;
+	// }
+}
+.smaller-wrapper {
+    max-width: 1055px;
+	height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 0 15px;
+}
+a{text-decoration: none;}

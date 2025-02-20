@@ -1,0 +1,14 @@
+@import "../default_variables";
+
+.header { 
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 40px 0 40px;
+	
+	&--logo {
+		font-size: $text-30;
+		line-height: 26.4px;
+		text-transform: uppercase;
+	}
+}
+

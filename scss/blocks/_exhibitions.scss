@@ -1,0 +1,46 @@
+.exhibitions {
+    margin-top: 224px;
+    &--title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & a {display: flex; align-items: center;}
+        & img {margin-left: 20px;}
+    }
+
+    &--content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &--block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--info{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 689px;
+            gap: 8px 20px;
+            & p {font-size: $text-16; line-height: 25.6px;}
+            & h3 {
+                font-size: 40px; 
+                line-height: 44px;
+                text-transform: uppercase;
+            }
+        }
+        &--link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: $text-18;
+            color: $text-primary;
+        }
+        &--date {
+            text-align: end;
+            color: $text-primary;
+        }
+    }
+}
