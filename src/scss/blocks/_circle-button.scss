@@ -1,7 +1,7 @@
 .button-container {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 16   0px;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,15 +24,35 @@
 }
 
 .button-circle--small {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 20%;
+    text-align: center;
     background-color: $text-primary;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    animation: rotate 2.5s infinite linear; 
+    transform-origin: left top;
+
+    &:hover {
+        animation-play-state: paused;
+        @keyframes rotate { 
+            0% { 
+                transform: rotate(0deg) 
+                    translateX(5px) rotate(0deg); 
+            } 
+        
+            100% { 
+                transform: rotate(360deg) 
+                    translateX(5px) rotate(-360deg); 
+            } 
+        } 
+    }
 }
+
 
 .button-text {
     font-size: 14px;
@@ -40,8 +60,7 @@
     color: white;
     text-transform: uppercase;
 }
-
-/* Эффект наведения */
-.button-container:hover .button-circle--small {
-    transform: scale(1.1);
-}
+// /* Эффект наведения */
+// .button-container:hover .button-circle--small {
+//     transform: scale(1.1);
+// }
