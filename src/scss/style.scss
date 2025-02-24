@@ -1,4 +1,4 @@
-// @import "./node_modules/scss-reset/reset";
+@import "./node_modules/scss-reset/reset";
 @import "../scss/default_variables";
 @import "./blocks/circle-button";
 
@@ -14,12 +14,7 @@
 
 @import "./blocks/media";
 
-@font-face {
-	font-family: 'ClashDisplay';
-	src: local('ClashDisplay'),
-		 url('/root/assets/fonts/OTF/ClashDisplay-Regular.otf') format('otf'),
-		 url('/root/assets/fonts/TTF/ClashDisplay-Variable.ttf') format('ttf')
-}
+
 :root {
 
 	font-family: $main-font;
@@ -29,7 +24,7 @@
 	width: 0;
 }
 body{
-
+	color: $text-default;
 }
 .wrapper {
     max-width: 1400px;

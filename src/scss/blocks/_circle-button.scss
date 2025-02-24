@@ -34,7 +34,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
     position: relative;
-    animation: rotate 2.5s infinite linear; 
+    animation: rotate 2s infinite linear; 
     transform-origin: left top;
 
     &:hover {
@@ -53,14 +53,9 @@
     }
 }
 
-
 .button-text {
     font-size: 14px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
 }
-// /* Эффект наведения */
-// .button-container:hover .button-circle--small {
-//     transform: scale(1.1);
-// }
